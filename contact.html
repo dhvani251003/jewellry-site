@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Jewellery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      padding: 40px 20px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .contact-section {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      background: linear-gradient(145deg, #1c1c1c, #131313);
+      border-radius: 16px;
+      padding: 40px;
+      animation: fadeIn 1s ease-in;
+      border: 1px solid #f0c040;
+    }
+
+    .contact-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #f0c040;
+      text-align: center;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-details div {
+      background-color: #111;
+      padding: 15px 20px;
+      border-left: 5px solid #f0c040;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-details div:hover {
+      transform: translateX(10px);
+      background-color: #1a1a1a;
+    }
+
+    .contact-details i {
+      margin-right: 10px;
+      color: #f0c040;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 22px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f0c040;
+    }
+
+    .contact-container {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      background-color: #1a1a1a;
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid #f0c040;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f0c040;
+      font-weight: 600;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      display: block;
+      color: #f1f1f1;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      width: 100%;
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      background-color: #000000;
+      border: 1px solid #f0c040;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-group button {
+      background-color: #f0c040;
+      color: #0d0d0d;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .form-group button:hover {
+      background-color: #f0c040;
+    }
+
+    .success-message {
+      text-align: center;
+      margin-top: 15px;
+      color: #80ff80;
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    color: #f0c040;
+    font-weight: 700;
+  }
+
+  </style>
+</head>
+<body>
+<h2 class="section-title">Contact US</h2>
+  <div class="wrapper">
+    <!-- Contact Details -->
+    <section class="contact-section">
+      <h2>Contact Details</h2>
+      <div class="contact-details">
+        <div><i class="fas fa-store"></i> Royal Gold Jewellery</div>
+        <div><i class="fas fa-map-marker-alt"></i> 123 Elegance Lane, Gold City, IN 380001</div>
+        <div><i class="fas fa-phone-alt"></i> +91 98765 43210</div>
+        <div><i class="fas fa-envelope"></i> contact@royalgold.com</div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="contact-container">
+      <h2>Send a Message</h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+        <div class="success-message" id="successMsg">Thank you! We’ll get back to you shortly.</div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      setTimeout(() => {
+        successMsg.style.display = 'block';
+        form.reset();
+      }, 500);
+    });
+  </script>
+
+</body>
+</html>

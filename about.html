@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jewellery About Section - Staircase Layout</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: #000;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .about-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    color: #f0c040;
+    font-weight: 700;
+  }
+
+  /* Container for staircase */
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  .photo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255 255 255 / 0.15);
+    cursor: pointer;
+    width: 250px;
+    height: 290px;
+    transition: transform 0.3s ease;
+  }
+
+  .photo-card img {
+    width: 290px;
+    height: 290px;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .photo-card:hover img {
+    transform: scale(1.1);
+  }
+
+  .desc-panel {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(240, 192, 64, 0.95);
+    color: #111;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.5s ease;
+    border-radius: 15px;
+  }
+
+  .photo-card:hover .desc-panel {
+    right: 0;
+  }
+
+  .desc-panel h3 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .desc-panel p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Stagger effect */
+  .photo-card:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .photo-card:nth-child(3) {
+    margin-top: 60px;
+  }
+
+  /* Perks and Benefits Section */
+  .perks-section {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .perks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .perk-card {
+    background: #1a1a1a;
+    color: #f0c040;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 260px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .perk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(240, 192, 64, 0.3);
+  }
+
+  .perk-card h4 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .perk-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+  }
+
+  @media (max-width: 768px) {
+    .photo-card {
+      margin-top: 0 !important;
+    }
+    .perks-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="about-section">
+  <h2 class="section-title">About Us</h2>
+  <div class="photo-grid">
+
+    <div class="photo-card">
+      <img src="./image/about-Necklace.jpg" alt="Elegant Necklace" />
+      <div class="desc-panel">
+        <h3>Elegant Necklace</h3>
+        <p>Crafted with precision, this necklace blends classic charm with modern design.</p>
+      </div>
+    </div>
+
+    <div class="photo-card">
+      <img src="./image/about-ring.jpg" alt="Luxury Ring" />
+      <div class="desc-panel">
+        <h3>Luxury Ring</h3>
+        <p>Make a statement with this stunning ring featuring rare gemstones and expert craftsmanship.</p>
+      </div>
+    </div>
+
+    <div class="photo-card">
+      <img src="./image/about-braclet.jpg" alt="Bracelet Collection" />
+      <div class="desc-panel">
+        <h3>Bracelet Collection</h3>
+        <p>A versatile collection designed to complement every style and occasion.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Perks Section -->
+  <div class="perks-section">
+    <h2 class="section-title">Perks and Benefits</h2>
+    <div class="perks-container">
+      <div class="perk-card">
+        <h4>Exclusive Discounts</h4>
+        <p>Get up to 25% off on select collections during seasonal sales and member events.</p>
+      </div>
+      <div class="perk-card">
+        <h4>Free Shipping</h4>
+        <p>Enjoy free worldwide shipping on all orders with no minimum purchase required.</p>
+      </div>
+      <div class="perk-card">
+        <h4>Lifetime Warranty</h4>
+        <p>Our products come with a lifetime guarantee for craftsmanship and quality.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
